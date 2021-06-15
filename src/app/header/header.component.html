@@ -1,0 +1,39 @@
+<!-- HEADER =============================-->
+<style>
+    #videoHomepage {
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+        max-height: 560px;
+        object-fit: cover;
+        object-position: center;
+    }
+</style>
+<header class="margin-top-0">
+
+    <video autoplay muted loop id="videoHomepage" *ngIf="this.router.url !== '/login'">
+        <source src="http://localhost:4200/assets/videos/video-homepage.mp4" type="video/mp4">
+    </video>
+
+    <div class="wrapper">
+        <nav role="navigation" class="navbar navbar-white navbar-embossed navbar-lg navbar-fixed-top" style="background-color:#ffffff;">
+            <div class="container">
+                <div class="navbar-header">
+                    <button data-target="#navbar-collapse-02" data-toggle="collapse" class="navbar-toggle" type="button">
+                        <i class="fa fa-bars"></i>
+                        <span class="sr-only">Toggle navigation</span>
+                    </button>
+                    <a [routerLink]="['/']" class="navbar-brand brand"> <img class="d-inline-block w-150 mb-4" src="./assets/images/logo_size2.png" alt="Home"> </a>
+                </div>
+                <div id="navbar-collapse-02" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="propClone"><a [routerLink]="['/']">Home</a></li>
+                        <li class="propClone"><a [routerLink]="['/about']">Sobre</a></li>
+                        <li class="propClone"><a [routerLink]="['/contact']">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <dogs-header-pictures></dogs-header-pictures>
+    </div>
+</header>
