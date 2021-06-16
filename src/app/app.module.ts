@@ -10,6 +10,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeaderPicturesComponent } from './header/header-pictures/header-pictures.component';
+import { FooterTermosPrivacidadeComponent } from './footer/footer-termos-privacidade/footer-termos-privacidade.component';
+import { PoliticaPrivacidadeComponent } from './politica-privacidade/politica-privacidade.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HeaderPicturesComponent } from './header/header-pictures/header-picture
     NotFoundComponent,
     AboutComponent,
     ContactComponent,
-    HeaderPicturesComponent
+    HeaderPicturesComponent,
+    FooterTermosPrivacidadeComponent,
+    PoliticaPrivacidadeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,8 @@
+<section class="termos-politica" id="termos-politica" *ngIf="termosAceito == false">
+	<p>
+		A 99Dogs utiliza cookies e tecnologias semelhantes para melhorar a sua experiência, analisar como você interage com o site, melhorar desempenho e personalizar conteúdo. <br> Para saber mais, acesse a <a style="color: #ffffff" [routerLink]="['/politica-privacidade']"><b>política de privacidade</b></a>. Ao continuar navegando em nosso site, você concorda com a nossa política.
+	</p>
+	<div class="termos-politica-acoes">
+		<span class="aceitar-termos-politica" (click)="aceitarTermos()">Aceitar</span>
+	</div>
+</section>
