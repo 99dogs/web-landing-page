@@ -2,7 +2,7 @@
 <style>
     #videoHomepage {
         position: absolute;
-        width: 100%;
+        width: 100vw;
         z-index: -1;
         max-height: 560px;
         object-fit: cover;
@@ -11,9 +11,7 @@
 </style>
 <header class="margin-top-0">
 
-    <video autoplay muted loop id="videoHomepage">
-        <source src="./assets/videos/video-homepage.mp4" type="video/mp4">
-    </video>
+    <img id="videoHomepage" src="./assets/images/banner-dogwalker.jpg" alt="">
 
     <div class="wrapper">
         <nav role="navigation" class="navbar navbar-white navbar-embossed navbar-lg navbar-fixed-top" style="background-color:#ffffff;">
@@ -23,14 +21,14 @@
                         <i class="fa fa-bars"></i>
                         <span class="sr-only">Toggle navigation</span>
                     </button>
-                    <a [routerLink]="['/']" class="navbar-brand brand"> <img class="d-inline-block w-150 mb-4" src="./assets/images/logo_size2.png" alt="Home"> </a>
+                    <a [routerLink]="['/']" class="navbar-brand brand"> <img class="d-inline-block w-150 mb-4" src="./assets/images/Petlogo.png" alt="Home" style="width: 100px;"> </a>
                 </div>
                 <div id="navbar-collapse-02" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="propClone"><a [routerLink]="['/']">Home</a></li>
+                        <li class="propClone"><a [routerLink]="['/']">Início</a></li>
                         <li class="propClone"><a [routerLink]="['/about']">Sobre</a></li>
-                        <li class="propClone"><a [routerLink]="['/contact']">Contato</a></li>
                         <li class="propClone"><a [routerLink]="['/politica-privacidade']">Política de privacidade</a></li>
+                        <li class="propClone"><a [routerLink]="['/contact']">Contato</a></li>
                     </ul>
                 </div>
             </div>
